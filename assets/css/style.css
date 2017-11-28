@@ -1,0 +1,196 @@
+/* Nome do Projeto: Cozinha e Lavanderia - Test para TagInterativa
+Autor:Jardel José Jacob
+Autor URI:http://www.jardeljacob.com.br
+Autor e-mail:contato@jardeljacob.com.br
+Criado em: Novembro 2017
+
+*/
+/* Links */
+a, 
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+ * Estrutura Base
+ */
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/*
+*Site-Wrapper
+*/
+.site-wrapper {
+  background-image: url('../images/backgroud/Backgroud.jpg');
+  /* Crie o efeito de rolagem de paralax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  height: 100%; 
+  min-height: 100%;
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/*
+ * visible-phone
+ */
+.visible-phone{
+    display: none;
+  }
+
+/*
+ * Perssonagem
+ */
+ .perssonagem{
+  max-width:100%;
+  height:auto;
+ }
+
+ /*
+ *Logo
+ */
+ .conteudo{
+  padding: 2rem
+ }
+ .conteudo small,
+ .conteudo strong{
+  font-size: 32px;
+ }
+.logo{
+  max-width:100%;
+  height:auto;
+  margin-bottom: 20px;
+  float:none; 
+}
+
+/*
+*Formulário
+*/
+.cont-form{
+  background: #434367;
+  padding:1rem;
+}
+.cont-form .title{
+  margin-top: 5rem;
+}
+.title h5{
+  font-size: 24px;
+  color: #e74e6e;
+  font-family: Gill, Helvetica, sans-serif;
+  font-style: italic;
+}
+.form-control{
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  height: 30px;
+}
+
+/*
+*Botões
+*/
+.button{
+  text-align: center;
+}
+.btn-button{
+  border: 2px solid #4fb223;
+  background-color: #4fb223;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+}
+.btn-button:hover{
+  border: 2px solid #e74e6e;
+  background-color: #e74e6e;
+}
+
+/*
+*Social
+*/
+.social{
+  margin-top: 20px;
+}
+.btn-facebook,
+.btn-instagram,
+.btn-google{
+  border: 2px solid #fff;
+  background-color: transparent;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+.btn-facebook:hover,
+.btn-instagram:hover,
+.btn-google:hover{
+  border: 2px solid #fff;
+}
+i{
+  font-size: 18px !important;
+}
+.letr p{
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/*
+* Layout Responsivo
+*/
+@media (max-width: 991px) { 
+  .visible-phone{
+    display: block;
+  }
+  .visible-desktop{
+    display: none;
+  }
+  .perssonagem{
+    margin: 0;
+    padding: 0;
+  }
+  .cont{
+    padding: 0;
+    margin: 0
+  }
+  .cont-form .title{
+  margin-top: 0;
+  }
+  .cont-form{
+    background: transparent;
+    padding: 0 1rem 0 1rem;
+  }
+  .conteudo{
+    margin: 0;
+  }
+  .conteudo small,
+  .conteudo strong{
+  font-size: 22px;
+  }
+  .title h1{
+  color: #e74e6e;
+  font-family: Gill, Helvetica, sans-serif;
+  font-style: italic;
+  }
+}
+
+
